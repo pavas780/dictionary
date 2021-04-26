@@ -1,0 +1,11 @@
+import string
+a=dict()
+with open("poem.txt","r") as f:
+    for line in f:
+        words=line.split()
+        for w in words:
+            if w not in a:
+                a[w]=1
+            else:
+                a[w]+=1
+print(a
